@@ -1,0 +1,37 @@
+{
+  "name": "ficusjs-renderers",
+  "version": "0.1.0",
+  "description": "Compressed and minified renderers for FicusJS",
+  "scripts": {
+    "build": "run-p build:*",
+    "build:create-element": "rollup -i src/create-element.js -o dist/create-element.js -f es -p \"node-resolve={}\" -p \"terser={mangle: { keep_fnames: true, toplevel: true, module: true }}\" -p \"filesize={}\"",
+    "build:htm": "rollup -i src/htm.js -o dist/htm.js -f es -p \"node-resolve={}\" -p \"terser={mangle: { keep_fnames: true, toplevel: true, module: true }}\" -p \"filesize={}\"",
+    "build:uhtml": "rollup -i src/uhtml.js -o dist/uhtml.js -f es -p \"node-resolve={}\" -p \"terser={mangle: { keep_fnames: true, toplevel: true, module: true }}\" -p \"filesize={}\"",
+    "build:lit-html": "rollup -i src/lit-html.js -o dist/lit-html.js -f es -p \"node-resolve={}\" -p \"terser={mangle: { keep_fnames: true, toplevel: true, module: true }}\" -p \"filesize={}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ficusjs/ficusjs-renderers.git"
+  },
+  "keywords": [
+    "ficusjs",
+    "frontend"
+  ],
+  "author": "Matt Levy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ficusjs/ficusjs-renderers/issues"
+  },
+  "homepage": "https://github.com/ficusjs/ficusjs-renderers#readme",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "10.0.0",
+    "htm": "3.0.4",
+    "lit-html": "1.3.0",
+    "npm-run-all": "4.1.5",
+    "rollup": "2.32.1",
+    "rollup-plugin-filesize": "9.0.2",
+    "rollup-plugin-terser": "7.0.2",
+    "standard": "15.0.1",
+    "uhtml": "2.1.2"
+  }
+}
