@@ -21,7 +21,7 @@ The following renderers have been tested with [FicusJS](https://docs.ficusjs.org
 The `lit-html` renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://unpkg.com/ficusjs-renderers/dist/lit-html.js'
+import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
 ```
 
 ## `uhtml`
@@ -29,7 +29,7 @@ import { html, renderer } from 'https://unpkg.com/ficusjs-renderers/dist/lit-htm
 The `uhtml` renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://unpkg.com/ficusjs-renderers/dist/uhtml.js'
+import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/uhtml.js'
 ```
 
 ## `htm` with `preact`
@@ -37,7 +37,7 @@ import { html, renderer } from 'https://unpkg.com/ficusjs-renderers/dist/uhtml.j
 The `htm` with `preact` renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://unpkg.com/ficusjs-renderers/dist/htm.js'
+import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/htm.js'
 ```
 
 ## `document.createElement`
@@ -45,5 +45,5 @@ import { html, renderer } from 'https://unpkg.com/ficusjs-renderers/dist/htm.js'
 The simple `document.createElement` renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://unpkg.com/ficusjs-renderers/dist/create-element.js'
+import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/create-element.js'
 ```

@@ -1,7 +1,7 @@
 {
   "name": "ficusjs-renderers",
-  "version": "0.1.0",
-  "description": "Compressed and minified renderers for FicusJS",
+  "version": "1.0.0",
+  "description": "Minified ES module renderers for FicusJS",
   "scripts": {
     "build": "run-p build:*",
     "build:create-element": "rollup -i src/create-element.js -o dist/create-element.js -f es -p \"node-resolve={}\" -p \"terser={mangle: { keep_fnames: true, toplevel: true, module: true }}\" -p \"filesize={}\"",
@@ -15,7 +15,11 @@
   },
   "keywords": [
     "ficusjs",
-    "frontend"
+    "frontend",
+    "lit-html",
+    "uhtml",
+    "htm",
+    "preact"
   ],
   "author": "Matt Levy",
   "license": "ISC",
