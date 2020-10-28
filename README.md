@@ -30,7 +30,7 @@ createComponent('test-comp', {
       <div>Some HTML content with ${someVariable}</div>
     `
   }
-}
+})
 ```
 
 ## `uhtml`
@@ -47,7 +47,7 @@ createComponent('test-comp', {
       <div>Some HTML content with ${someVariable}</div>
     `
   }
-}
+})
 ```
 
 ## `htm` and `Preact`
@@ -64,7 +64,7 @@ createComponent('test-comp', {
       <div>Some HTML content with ${someVariable}</div>
     `
   }
-}
+})
 ```
 
 ## `document.createElement`
@@ -82,5 +82,5 @@ createComponent('test-comp', {
       <div>Some HTML content with ${someVariable}</div>
     `
   }
-}
+})
 ```
