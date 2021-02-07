@@ -1,6 +1,6 @@
 {
   "name": "@ficusjs/renderers",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Minified ES module renderers for FicusJS",
   "main": "dist/uhtml.js",
   "module": "dist/uhtml.js",
@@ -24,6 +24,20 @@
     "htm",
     "preact"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/uhtml.js"
+    },
+    "./lit-html": {
+      "import": "./dist/lit-html.js"
+    },
+    "./htm": {
+      "import": "./dist/htm.js"
+    },
+    "./create-element": {
+      "import": "./dist/create-element.js"
+    }
+  },
   "author": "Matt Levy",
   "license": "ISC",
   "bugs": {
