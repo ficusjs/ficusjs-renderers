@@ -1,6 +1,6 @@
 {
   "name": "@ficusjs/renderers",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Minified ES module renderers for FicusJS",
   "main": "dist/uhtml.js",
   "module": "dist/uhtml.js",
@@ -26,6 +26,9 @@
   ],
   "exports": {
     ".": {
+      "import": "./dist/uhtml.js"
+    },
+    "./uhtml": {
       "import": "./dist/uhtml.js"
     },
     "./lit-html": {
