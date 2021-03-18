@@ -13,7 +13,8 @@ The following renderers have been tested with [FicusJS](https://docs.ficusjs.org
 
 - [uhtml](https://www.npmjs.com/package/uhtml) (default)
 - [lit-html](https://www.npmjs.com/package/lit-html)
-- [htm and Preact](https://www.npmjs.com/package/htm)
+- [htm](https://www.npmjs.com/package/htm)
+- [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact)
 - `document.createElement`
 
 ## `uhtml`
@@ -50,12 +51,29 @@ createComponent('test-comp', {
 })
 ```
 
-## `htm` and `Preact`
+## `htm`
 
-The [htm and Preact](https://www.npmjs.com/package/htm) renderer is available in this package.
+The [htm](https://www.npmjs.com/package/htm) renderer is a JSX-like renderer available in this package.
 
 ```js
 import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/htm'
+
+createComponent('test-comp', {
+  renderer,
+  render () {
+    return html`
+      <div>Some HTML content with ${someVariable}</div>
+    `
+  }
+})
+```
+
+## `htm` with `Preact`
+
+The [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact) renderer is available in this package.
+
+```js
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/htm-preact'
 
 createComponent('test-comp', {
   renderer,

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTM with Preact renderer</title>
+</head>
+<body>
+<hello-world></hello-world>
+
+<script type="module">
+  import { html, renderer } from '../../../dist/htm-preact.js'
+  import { createComponent } from 'https://cdn.skypack.dev/ficusjs/component'
+
+  createComponent('hello-world', {
+    renderer,
+    handleClick (e) {
+      window.alert('Hello to you!')
+    },
+    render () {
+      return html`<div>
+<p>Test component</p>
+<button type="button" onClick="${this.handleClick}">Click me!</button>
+</div>`
+    }
+  })
+</script>
+</body>
+</html>
