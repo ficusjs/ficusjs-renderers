@@ -1,5 +1,5 @@
 /* global Node */
-import flatten from 'lodash.flatten'
+const flatten = arr => arr.flat(1)
 
 const h = (tag, attrs, ...children) => {
   let elm = null
