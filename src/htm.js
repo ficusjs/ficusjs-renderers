@@ -8,7 +8,7 @@ function renderer (what, where) {
   while (where.firstChild) where.removeChild(where.firstChild)
 
   // add the element to the DOM
-  where.appendChild(what)
+  Array.isArray(what) ? what.forEach(w => where.appendChild(w)) : where.appendChild(what)
 }
 
 export { html, renderer }

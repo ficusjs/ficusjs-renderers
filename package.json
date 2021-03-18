@@ -1,6 +1,6 @@
 {
   "name": "@ficusjs/renderers",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Minified ES module renderers for FicusJS",
   "main": "dist/uhtml.js",
   "module": "dist/uhtml.js",
