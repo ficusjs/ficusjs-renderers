@@ -1,6 +1,6 @@
 {
   "name": "@ficusjs/renderers",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Minified ES module renderers for FicusJS",
   "main": "dist/uhtml.js",
   "module": "dist/uhtml.js",
@@ -46,7 +46,7 @@
       "import": "./dist/htm.js"
     },
     "./htm-preact": {
-      "import": "./dist/htm.js"
+      "import": "./dist/htm-preact.js"
     },
     "./create-element": {
       "import": "./dist/create-element.js"
