@@ -1,5 +1,5 @@
 import htm from 'htm/src/index.mjs'
-import { h } from './util/jsx-dom.js'
+import { h } from './util/jsx-dom.mjs'
 
 const html = htm.bind(h)
 

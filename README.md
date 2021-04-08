@@ -6,23 +6,23 @@ This package provides a tested set of renderers as ES modules to make working wi
 
 ## Summary
 
-A `renderer` function must be provided when creating a new [FicusJS](https://docs.ficusjs.org) component.
+A `renderer` function **must** be provided when creating a new [FicusJS](https://docs.ficusjs.org) component.
 This allows any renderer to be plugged into a component.
 
 The following renderers have been tested with [FicusJS](https://docs.ficusjs.org) and are available as minified bundles in this package to make working with them much easier.
 
-- [uhtml](https://www.npmjs.com/package/uhtml) (default)
-- [lit-html](https://www.npmjs.com/package/lit-html)
-- [htm](https://www.npmjs.com/package/htm)
-- [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact)
-- `document.createElement`
+- [uhtml](https://www.npmjs.com/package/uhtml) (default) - 3.02 KB gzipped
+- [lit-html](https://www.npmjs.com/package/lit-html) - 3.61 KB gzipped
+- [htm](https://www.npmjs.com/package/htm) (JSX-like syntax - no transpiler necessary) - 923 B gzipped
+- [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact) (JSX-like syntax - no transpiler necessary) - 4.3 KB gzipped
+- `document.createElement` - 141 B gzipped
 
 ## `uhtml`
 
 The [uhtml](https://www.npmjs.com/package/uhtml) renderer is available in this package and is the default renderer.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/uhtml'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@3/uhtml'
 
 createComponent('test-comp', {
   renderer,
@@ -39,7 +39,7 @@ createComponent('test-comp', {
 The [lit-html](https://www.npmjs.com/package/lit-html) renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@3/lit-html'
 
 createComponent('test-comp', {
   renderer,
@@ -56,7 +56,7 @@ createComponent('test-comp', {
 The [htm](https://www.npmjs.com/package/htm) renderer is a JSX-like renderer available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/htm'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@3/htm'
 
 createComponent('test-comp', {
   renderer,
@@ -73,7 +73,7 @@ createComponent('test-comp', {
 The [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact) renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/htm-preact'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@3/htm-preact'
 
 createComponent('test-comp', {
   renderer,
@@ -91,7 +91,7 @@ The simple `document.createElement` renderer is available in this package.
 In your component, return a template literal string containing HTML.
 
 ```js
-import { renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/create-element'
+import { renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@3/create-element'
 
 createComponent('test-comp', {
   renderer,
