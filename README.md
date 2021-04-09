@@ -17,7 +17,7 @@ The following renderers have been tested with [FicusJS](https://docs.ficusjs.org
 - [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact) (JSX-like syntax - no transpiler necessary) - 4.3 KB gzipped
 - `document.createElement` - 141 B gzipped
 
-## `uhtml`
+## uhtml
 
 The [uhtml](https://www.npmjs.com/package/uhtml) renderer is available in this package and is the default renderer.
 
@@ -34,7 +34,7 @@ createComponent('test-comp', {
 })
 ```
 
-## `lit-html`
+## lit-html
 
 The [lit-html](https://www.npmjs.com/package/lit-html) renderer is available in this package.
 
@@ -51,7 +51,7 @@ createComponent('test-comp', {
 })
 ```
 
-## `htm`
+## htm
 
 The [htm](https://www.npmjs.com/package/htm) renderer is a JSX-like renderer available in this package.
 
@@ -68,7 +68,7 @@ createComponent('test-comp', {
 })
 ```
 
-## `htm` with `Preact`
+## htm with Preact
 
 The [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact) renderer is available in this package.
 
@@ -85,10 +85,12 @@ createComponent('test-comp', {
 })
 ```
 
-## `document.createElement`
+## document.createElement
 
-The simple `document.createElement` renderer is available in this package.
+The [`document.createElement`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) renderer is available in this package.
 In your component, return a template literal string containing HTML.
+
+This is only the `renderer` function and **does not use** a tagged template literal for rendering.
 
 ```js
 import { renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@3/create-element'
