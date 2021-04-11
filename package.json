@@ -62,7 +62,7 @@
     "types"
   ],
   "author": "Matt Levy",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ficusjs/ficusjs-renderers/issues"
   },
