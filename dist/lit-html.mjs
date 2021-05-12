@@ -104,4 +104,4 @@ class h{constructor(t,e,s){this.__parts=[],this.template=t,this.processor=e,this
  * subject to an additional IP rights grant found at
  * http://polymer.github.io/PATENTS.txt
  */
-"undefined"!=typeof window&&(window.litHtmlVersions||(window.litHtmlVersions=[])).push("1.3.0");const html=(t,...e)=>new u(t,e,"html",N);export{html,render as renderer};
+"undefined"!=typeof window&&(window.litHtmlVersions||(window.litHtmlVersions=[])).push("1.4.1");const html=(t,...e)=>new u(t,e,"html",N);export{html,render as renderer};
