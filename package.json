@@ -1,6 +1,6 @@
 {
   "name": "@ficusjs/renderers",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "Minified ES module renderers for FicusJS",
   "main": "dist/uhtml.mjs",
   "module": "dist/uhtml.mjs",
@@ -69,23 +69,23 @@
   "homepage": "https://github.com/ficusjs/ficusjs-renderers#readme",
   "devDependencies": {
     "ava": "3.15.0",
-    "@rollup/plugin-alias": "3.1.2",
-    "@rollup/plugin-commonjs": "19.0.0",
-    "@rollup/plugin-node-resolve": "13.0.0",
-    "c8": "7.7.2",
-    "cypress": "7.3.0",
-    "ficusjs": "3.3.0",
+    "@rollup/plugin-alias": "3.1.4",
+    "@rollup/plugin-commonjs": "19.0.1",
+    "@rollup/plugin-node-resolve": "13.0.2",
+    "c8": "7.7.3",
+    "cypress": "8.0.0",
+    "ficusjs": "3.6.0",
     "http-server": "0.12.3",
-    "htm": "3.0.4",
-    "jsdom": "16.5.3",
+    "htm": "3.1.0",
+    "jsdom": "16.6.0",
     "lit-html": "1.4.1",
     "npm-run-all": "4.1.5",
-    "open-cli": "6.0.1",
-    "rollup": "2.47.0",
+    "open-cli": "7.0.0",
+    "rollup": "2.53.2",
     "rollup-plugin-filesize": "9.1.1",
     "rollup-plugin-terser": "7.0.2",
     "standard": "16.0.3",
-    "start-server-and-test": "1.12.1",
-    "uhtml": "2.7.3"
+    "start-server-and-test": "1.12.6",
+    "uhtml": "2.7.6"
   }
 }
