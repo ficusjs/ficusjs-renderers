@@ -1,6 +1,6 @@
 {
   "name": "@ficusjs/renderers",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "description": "Minified ES module renderers for FicusJS",
   "main": "dist/uhtml.mjs",
   "module": "dist/uhtml.mjs",
@@ -56,6 +56,9 @@
     },
     "./create-element": {
       "import": "./dist/create-element.mjs"
+    },
+    "./jsx-dom": {
+      "import": "./dist/jsx-dom.mjs"
     }
   },
   "files": [
