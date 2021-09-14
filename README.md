@@ -6,7 +6,7 @@ This package provides a tested set of renderers as ES modules to make working wi
 
 ## Summary
 
-A `renderer` function **must** be provided when creating a new [FicusJS](https://docs.ficusjs.org) component.
+A `renderer` function can be provided when creating a new [FicusJS](https://docs.ficusjs.org) component.
 This allows any renderer to be plugged into a component.
 
 The following renderers have been tested with [FicusJS](https://docs.ficusjs.org) and are available as minified bundles in this package to make working with them much easier.
