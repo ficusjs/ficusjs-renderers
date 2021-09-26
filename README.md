@@ -21,7 +21,7 @@ The following renderers have been tested with [FicusJS](https://docs.ficusjs.org
 The [htm](https://www.npmjs.com/package/htm) renderer is a JSX-like renderer available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@3/htm'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/htm'
 
 createComponent('test-comp', {
   renderer,
@@ -38,7 +38,7 @@ createComponent('test-comp', {
 The [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact) renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@3/htm-preact'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/htm-preact'
 
 createComponent('test-comp', {
   renderer,
@@ -55,7 +55,7 @@ createComponent('test-comp', {
 The [lit-html](https://www.npmjs.com/package/lit-html) renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@3/lit-html'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/lit-html'
 
 createComponent('test-comp', {
   renderer,
@@ -72,7 +72,7 @@ createComponent('test-comp', {
 The [uhtml](https://www.npmjs.com/package/uhtml) renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@3/uhtml'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/uhtml'
 
 createComponent('test-comp', {
   renderer,
