@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.1.1] - 2021-09-26
+
+### Updates
+- Update docs
+
 ## [4.1.0] - 2021-09-26
 
 ### Updates
@@ -12,6 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Uplift NPM dev dependencies
 
 ## [4.0.0] - 2021-09-14
+
+### New
+- package is ES module by default
 
 ### Removed
 - remove `document.createElement` renderer as this is now built-in

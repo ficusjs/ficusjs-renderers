@@ -1,7 +1,8 @@
 {
   "name": "@ficusjs/renderers",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Minified ES module renderers for FicusJS",
+  "type": "module",
   "main": "dist/uhtml.mjs",
   "module": "dist/uhtml.mjs",
   "types": "types/renderers.d.ts",
