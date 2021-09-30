@@ -4,7 +4,7 @@ Minified ES module renderers for [FicusJS](https://docs.ficusjs.org).
 
 This package provides a tested set of renderers as ES modules to make working with them much easier.
 
-## Summary
+## Getting started
 
 A `renderer` function can be provided when creating a new [FicusJS](https://docs.ficusjs.org) component.
 This allows any renderer to be plugged into a component.
@@ -83,3 +83,79 @@ createComponent('test-comp', {
   }
 })
 ```
+
+## Installation
+
+FicusJS renderers can be installed in a number of ways.
+
+### CDN
+
+We recommend using native ES modules in the browser.
+
+```html
+<script type="module">
+  import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/uhtml'
+</script>
+```
+
+FicusJS renderers is available on [Skypack](https://www.skypack.dev/view/@ficusjs/renderers).
+
+### NPM
+
+FicusJS renderers work nicely with build tools such as Snowpack, Webpack or Rollup. If you are using a NodeJS tool, you can install the NPM package.
+
+```bash
+npm install @ficusjs/renderers
+```
+
+### Available builds
+
+FicusJS renderers only provides ES module builds. For legacy browsers or alternative modules such as CommonJS, it is recommended to use a build tool to transpile the code.
+
+## Development
+
+How to set-up FicusJS renderers for local development.
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/ficusjs/ficusjs-renderers.git
+```
+
+2. Change the working directory
+
+```bash
+cd ficusjs-renderers
+```
+
+3. Install dependencies
+
+```bash
+npm install # or, yarn install
+```
+
+4. Run the local development server
+
+```bash
+npm run dev # or, yarn dev
+```
+
+That's it! Now open http://localhost:8080 to see a local app.
+
+## License
+
+This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
+
+## Contributing to FicusJS renderers
+
+Any kind of positive contribution is welcome! Please help us to grow by contributing to the project.
+
+If you wish to contribute, you can work on any features you think would enhance the library. After adding your code, please send us a Pull Request.
+
+> Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our [CODE OF CONDUCT](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+
+## Support
+
+We all need support and motivation. FicusJS is not an exception. Please give this project a ⭐️ to encourage and show that you liked it. Don't forget to leave a star ⭐️ before you move away.
+
+If you found the library helpful, please consider [sponsoring us](https://github.com/sponsors/ficusjs).
