@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.3.0] - 2022-01-15
+
+### Updates
+- Uplift `lit-html` to v2.1.1
+- Uplift `uhtml` to v2.8.0
+- Uplift NPM dev dependencies
+
 ## [4.2.0] - 2021-10-20
 
 ### Updates
