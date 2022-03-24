@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>css renderer</title>
+</head>
+<body>
+<hello-world></hello-world>
+
+<script type="module">
+  import { html, renderer } from '../../../dist/uhtml.mjs'
+  import { css } from '../../../dist/css.mjs'
+  import { createComponent } from 'https://cdn.skypack.dev/ficusjs/component'
+  import { withStyles } from 'https://cdn.skypack.dev/@ficusjs/component-extensions/with-styles'
+
+  createComponent(
+    'hello-world',
+    withStyles({
+      renderer,
+      handleClick (e) {
+        window.alert('Hello to you!')
+      },
+      styles () {
+        return css`
+          hello-world p {
+            background-color: purple;
+            color: pink;
+          }
+        `
+      },
+      render () {
+        return html`
+          <div>
+            <p>Test component</p>
+            <button type="button" onclick="${this.handleClick}">Click me!</button>
+          </div>
+        `
+      }
+    })
+  )
+</script>
+</body>
+</html>
