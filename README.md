@@ -13,15 +13,16 @@ The following renderers have been tested with [FicusJS](https://docs.ficusjs.org
 
 - [htm](https://www.npmjs.com/package/htm) (JSX-like syntax - no transpiler necessary) - 923 B gzipped
 - [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact) (JSX-like syntax - no transpiler necessary) - 4.45 KB gzipped
-- [lit-html](https://www.npmjs.com/package/lit-html) - 3.14 KB gzipped
-- [uhtml](https://www.npmjs.com/package/uhtml) - 3.01 KB gzipped
+- [lit-html](https://www.npmjs.com/package/lit-html) - 3.21 KB gzipped
+- [uhtml](https://www.npmjs.com/package/uhtml) - 2.71 KB gzipped
+- css - 204 B gzipped
 
 ## htm
 
 The [htm](https://www.npmjs.com/package/htm) renderer is a JSX-like renderer available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/htm'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@5/htm'
 
 createComponent('test-comp', {
   renderer,
@@ -38,7 +39,7 @@ createComponent('test-comp', {
 The [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact) renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/htm-preact'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@5/htm-preact'
 
 createComponent('test-comp', {
   renderer,
@@ -55,7 +56,7 @@ createComponent('test-comp', {
 The [lit-html](https://www.npmjs.com/package/lit-html) renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/lit-html'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@5/lit-html'
 
 createComponent('test-comp', {
   renderer,
@@ -72,7 +73,7 @@ createComponent('test-comp', {
 The [uhtml](https://www.npmjs.com/package/uhtml) renderer is available in this package.
 
 ```js
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/uhtml'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@5/uhtml'
 
 createComponent('test-comp', {
   renderer,
@@ -82,6 +83,37 @@ createComponent('test-comp', {
     `
   }
 })
+```
+
+## css
+
+The css renderer is available in this package and is intended for rendering CSS styles within a component.
+
+This renderer is used in conjunction with the [withStyles](https://docs.ficusjs.org/extending-components/with-styles/) component extension.
+
+```js
+// import the css tagged template literal
+import { css } from 'https://cdn.skypack.dev/@ficusjs/renderers@5/css'
+
+createCustomElement(
+  'test-comp',
+  withStyles({
+    renderer,
+    styles () {
+      return css`
+        test-comp div {
+          background-color: purple;
+          color: pink
+        }
+      `
+    },
+    render () {
+      return html`
+        <div>Some HTML content with ${someVariable}</div>
+      `
+    }
+  })
+)
 ```
 
 ## Installation
@@ -94,7 +126,7 @@ We recommend using native ES modules in the browser.
 
 ```html
 <script type="module">
-  import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/uhtml'
+  import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@5/uhtml'
 </script>
 ```
 
