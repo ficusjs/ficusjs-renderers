@@ -75,7 +75,7 @@
   "homepage": "https://github.com/ficusjs/ficusjs-renderers#readme",
   "devDependencies": {
     "ava": "4.3.3",
-    "@rollup/plugin-alias": "3.1.9",
+    "@rollup/plugin-alias": "4.0.0",
     "@rollup/plugin-commonjs": "22.0.2",
     "@rollup/plugin-node-resolve": "14.1.0",
     "c8": "7.12.0",
