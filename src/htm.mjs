@@ -1,4 +1,4 @@
-import htm from 'htm/src/index.mjs'
+import htm from 'htm/mini'
 import { h } from './jsx-dom.mjs'
 
 const html = htm.bind(h)
