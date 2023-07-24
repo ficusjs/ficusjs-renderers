@@ -79,7 +79,7 @@
     "@rollup/plugin-commonjs": "25.0.2",
     "@rollup/plugin-node-resolve": "15.1.0",
     "c8": "8.0.0",
-    "cypress": "12.17.0",
+    "cypress": "12.17.2",
     "http-server": "14.1.1",
     "htm": "3.1.1",
     "jsdom": "22.1.0",
