@@ -163,13 +163,13 @@ cd ficusjs-renderers
 3. Install dependencies
 
 ```bash
-npm install # or, yarn install
+npm install
 ```
 
 4. Run the local development server
 
 ```bash
-npm run dev # or, yarn dev
+npm run dev
 ```
 
 That's it! Now open http://localhost:8080 to see a local app.

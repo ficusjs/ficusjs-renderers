@@ -1,2 +1,2 @@
-function createStyle(e){const t=document.createElement("style");return t.appendChild(document.createTextNode(e)),t}function css(e,...t){const n=e.raw;let c="",r=1;const o=arguments.length;let l,s;for(;r<o;)l=n[r-1],s=t[r-1],c+=l+s,r++;return c+=n[n.length-1],createStyle(c)}export{css};
+function css(e,...t){const n=e.raw;let c="",o=1;const r=arguments.length;let s,l;for(;o<r;)s=n[o-1],l=t[o-1],c+=s+l,o++;return c+=n[n.length-1],function(e){const t=document.createElement("style");return t.appendChild(document.createTextNode(e)),t}(c)}export{css};
 //# sourceMappingURL=css.mjs.map
