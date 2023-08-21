@@ -78,7 +78,7 @@
     "ava": "5.3.1",
     "@rollup/plugin-alias": "5.0.0",
     "@rollup/plugin-commonjs": "25.0.3",
-    "@rollup/plugin-node-resolve": "15.1.0",
+    "@rollup/plugin-node-resolve": "15.2.0",
     "@rollup/plugin-terser": "^0.4.3",
     "c8": "8.0.1",
     "cypress": "12.17.2",
