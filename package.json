@@ -92,7 +92,7 @@
     "rollup-plugin-filesize": "10.0.0",
     "standard": "17.1.2",
     "start-server-and-test": "2.0.8",
-    "uhtml": "3.2.2"
+    "uhtml": "4.5.11"
   },
   "standard": {
     "ignore": [
